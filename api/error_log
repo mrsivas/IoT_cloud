@@ -1,0 +1,16 @@
+[11-Aug-2026 23:27:19 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at ASC' at line 19 in /home2/mceioe21/public_html/api/device-history.php:173
+Stack trace:
+#0 /home2/mceioe21/public_html/api/device-history.php(173): PDO->prepare('\r\n\r\n    SELECT\r...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/api/device-history.php on line 173
+[11-Aug-2026 23:32:08 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at ASC' at line 19 in /home2/mceioe21/public_html/api/device-history.php:173
+Stack trace:
+#0 /home2/mceioe21/public_html/api/device-history.php(173): PDO->prepare('\r\n\r\n    SELECT\r...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/api/device-history.php on line 173
+[11-Aug-2026 23:33:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at ASC' at line 19 in /home2/mceioe21/public_html/api/device-history.php:173
+Stack trace:
+#0 /home2/mceioe21/public_html/api/device-history.php(173): PDO->prepare('\r\n\r\n    SELECT\r...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/api/device-history.php on line 173
+[11-Aug-2026 23:34:54 Asia/Kolkata] PHP Warning:  Undefined variable $whereTime in /home2/mceioe21/public_html/api/device-history.php on line 165

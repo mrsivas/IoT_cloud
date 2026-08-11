@@ -1,0 +1,66 @@
+[30-Jul-2026 12:18:51 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: e(): Argument #1 ($value) must be of type ?string, int given, called in /home2/mceioe21/public_html/devices/index.php on line 240 and defined in /home2/mceioe21/public_html/includes/functions.php:36
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(240): e(1)
+#1 {main}
+  thrown in /home2/mceioe21/public_html/includes/functions.php on line 36
+[30-Jul-2026 12:23:13 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: e(): Argument #1 ($value) must be of type ?string, int given, called in /home2/mceioe21/public_html/devices/index.php on line 240 and defined in /home2/mceioe21/public_html/includes/functions.php:36
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(240): e(1)
+#1 {main}
+  thrown in /home2/mceioe21/public_html/includes/functions.php on line 36
+[30-Jul-2026 12:29:02 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: e(): Argument #1 ($value) must be of type ?string, int given, called in /home2/mceioe21/public_html/devices/index.php on line 240 and defined in /home2/mceioe21/public_html/includes/functions.php:36
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(240): e(1)
+#1 {main}
+  thrown in /home2/mceioe21/public_html/includes/functions.php on line 36
+[30-Jul-2026 13:26:58 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: e(): Argument #1 ($value) must be of type ?string, int given, called in /home2/mceioe21/public_html/devices/index.php on line 240 and defined in /home2/mceioe21/public_html/includes/functions.php:36
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(240): e(1)
+#1 {main}
+  thrown in /home2/mceioe21/public_html/includes/functions.php on line 36
+[30-Jul-2026 13:27:12 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: e(): Argument #1 ($value) must be of type ?string, int given, called in /home2/mceioe21/public_html/devices/index.php on line 240 and defined in /home2/mceioe21/public_html/includes/functions.php:36
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(240): e(1)
+#1 {main}
+  thrown in /home2/mceioe21/public_html/includes/functions.php on line 36
+[30-Jul-2026 13:31:14 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM devices
+        WHERE
+            id = ?
+            AND deleted_at IS N' at line 12 in /home2/mceioe21/public_html/devices/index.php:100
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(100): PDO->prepare('\r\n        SELEC...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 100
+[30-Jul-2026 13:31:57 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM devices
+        WHERE
+            id = ?
+            AND deleted_at IS N' at line 12 in /home2/mceioe21/public_html/devices/index.php:100
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(100): PDO->prepare('\r\n        SELEC...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 100
+[30-Jul-2026 13:42:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM devices
+        WHERE
+            id = ?
+            AND deleted_at IS N' at line 12 in /home2/mceioe21/public_html/devices/index.php:83
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(83): PDO->prepare('\r\n        SELEC...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 83
+[30-Jul-2026 13:45:04 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM devices WHERE id = ? AND deleted_at IS NULL' at line 1 in /home2/mceioe21/public_html/devices/index.php:83
+Stack trace:
+#0 /home2/mceioe21/public_html/devices/index.php(83): PDO->prepare('SELECT id, devi...')
+#1 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 83
+[30-Jul-2026 14:17:00 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "row" in /home2/mceioe21/public_html/devices/index.php:306
+Stack trace:
+#0 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 306
+[30-Jul-2026 14:17:02 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "row" in /home2/mceioe21/public_html/devices/index.php:306
+Stack trace:
+#0 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 306
+[30-Jul-2026 14:17:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "row" in /home2/mceioe21/public_html/devices/index.php:306
+Stack trace:
+#0 {main}
+  thrown in /home2/mceioe21/public_html/devices/index.php on line 306

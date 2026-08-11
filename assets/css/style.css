@@ -1,0 +1,70 @@
+html,
+body {
+
+    height:100%;
+
+}
+
+
+body {
+
+    overflow-x:hidden;
+
+}
+
+
+.wrapper {
+
+    margin-left:260px;
+
+}
+
+
+.content-wrapper {
+
+    padding:20px;
+
+}
+
+
+.sidebar {
+
+    width:260px;
+
+}
+
+
+.header {
+
+    height:60px;
+
+}
+
+
+.content-area {
+
+    padding-top:0;
+
+}
+
+
+
+@media(max-width:991px){
+
+.wrapper {
+
+    margin-left:0;
+
+}
+
+}
+
+.sidebar-logo {
+
+    /*max-width: 150px;*/
+
+    max-height: 55px;
+
+    object-fit: contain;
+
+}
