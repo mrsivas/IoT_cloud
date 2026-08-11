@@ -1,0 +1,67 @@
+[30-Jul-2026 10:06:20 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home2/mceioe21/public_html/change-password.php on line 83
+[31-Jul-2026 12:04:03 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:04:41 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:04:46 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:21 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:52 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33
+[31-Jul-2026 12:06:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Undefined constant "APP_LOGO" in /home2/mceioe21/public_html/includes/sidebar.php:33
+Stack trace:
+#0 /home2/mceioe21/public_html/includes/header.php(49): include()
+#1 /home2/mceioe21/public_html/index.php(145): include('/home2/mceioe21...')
+#2 {main}
+  thrown in /home2/mceioe21/public_html/includes/sidebar.php on line 33

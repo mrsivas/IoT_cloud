@@ -1,0 +1,37 @@
+# --------------------------------------------------
+# MCEIoT
+# Apache Configuration
+# --------------------------------------------------
+Options -Indexes
+
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+
+# Block direct access to configuration
+
+RewriteRule ^config/ - [F,L]
+
+
+# Block direct database access
+
+RewriteRule ^database/ - [F,L]
+
+
+</IfModule>
+
+
+# PHP security
+
+<FilesMatch "\.(env|sql|log|ini)$">
+
+    Order allow,deny
+
+    Deny from all
+
+</FilesMatch>
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
