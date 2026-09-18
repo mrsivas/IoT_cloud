@@ -535,6 +535,21 @@ include INCLUDE_PATH . '/header.php';
             </option>
 
         </select>
+
+
+    
+<a
+    id="exportExcel"
+    href="<?= BASE_URL ?>/devices/export.php?id=<?= (int)$device['id'] ?>&range=24h"
+    class="btn btn-success btn-sm ms-2"
+    title="Export selected range to Excel">
+
+    <i class="cil-cloud-download"></i>
+    Export Excel
+
+</a>
+
+
         
         <div class="form-check form-switch ms-3">
 
@@ -550,7 +565,9 @@ include INCLUDE_PATH . '/header.php';
         Auto Refresh
 
     </label>
-
+    
+    
+    
 </div>
 
 
@@ -564,10 +581,33 @@ include INCLUDE_PATH . '/header.php';
 
                <?php if($device['device_type']==='BOOLEAN'): ?>
 
-<div id="booleanStatus"
-class="text-center p-4">
+<div id="booleanStatus1" class="text-center p-4"> </div>
+
+<?php if ($device['device_type'] === 'BOOLEAN'): ?>
+
+<div class="text-center p-4">
+
+
+    <div id="booleanStatus"
+         class="mb-3">
+
+        Loading...
+
+    </div>
+
+
+    <button
+        id="toggleDevice"
+        class="btn btn-success btn-lg">
+
+        Toggle
+
+    </button>
+
 
 </div>
+
+<?php endif; ?>
 
 <?php else: ?>
 
@@ -733,6 +773,183 @@ class="text-center p-4">
 </div>
 
 
+
+
+<script>
+
+let currentBooleanValue = null;
+
+
+
+function loadDeviceStatus(){
+
+
+    fetch(
+        "<?= BASE_URL ?>/api/device-status.php?device=<?= e($device['device_uuid']) ?>"
+    )
+
+
+    .then(response => response.json())
+
+
+    .then(data => {
+
+
+        if(!data.success){
+
+            return;
+
+        }
+
+
+        currentBooleanValue =
+            data.value;
+
+
+
+        updateBooleanButton(
+            data.status
+        );
+
+
+    });
+
+
+}
+
+
+
+function updateBooleanButton(status){
+
+
+    const box =
+        document.getElementById(
+            "booleanStatus"
+        );
+
+
+    const button =
+        document.getElementById(
+            "toggleDevice"
+        );
+
+
+
+    if(status === "ON"){
+
+
+        box.innerHTML = `
+
+            <h1 class="text-success">
+
+                🟢 ON
+
+            </h1>
+
+        `;
+
+
+        button.className =
+            "btn btn-danger btn-lg";
+
+
+        button.innerHTML =
+            "Turn OFF";
+
+
+    }
+    else {
+
+
+        box.innerHTML = `
+
+            <h1 class="text-danger">
+
+                🔴 OFF
+
+            </h1>
+
+        `;
+
+
+        button.className =
+            "btn btn-success btn-lg";
+
+
+        button.innerHTML =
+            "Turn ON";
+
+
+    }
+
+
+}
+
+
+
+
+document
+.getElementById("toggleDevice")
+?.addEventListener(
+    "click",
+    function(){
+
+
+        fetch(
+            "<?= BASE_URL ?>/api/device-toggle.php",
+            {
+
+                method:"POST",
+
+                headers:{
+
+                    "Content-Type":
+                    "application/x-www-form-urlencoded"
+
+                },
+
+
+                body:
+
+                "device=<?= e($device['device_uuid']) ?>"
+
+            }
+
+        )
+
+
+        .then(response => response.json())
+
+
+        .then(data => {
+
+
+            if(data.success){
+
+
+                updateBooleanButton(
+                    data.status
+                );
+                window.location.reload();
+
+            }
+
+
+        });
+
+
+    }
+);
+
+
+
+loadDeviceStatus();
+
+
+</script>
+
+
+
 <script>
 
 let deviceChart = null;
@@ -772,6 +989,17 @@ document
 );
 
 function loadChart(range = 'All') {
+
+    const exportButton =
+        document.getElementById('exportExcel');
+
+    if (exportButton) {
+
+        exportButton.href =
+            '<?= BASE_URL ?>/devices/export.php?id=<?= (int)$device['id'] ?>&range='
+            + encodeURIComponent(range);
+
+    }
 
 
     fetch(
